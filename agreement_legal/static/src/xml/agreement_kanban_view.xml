@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates>
-    <t
-        t-name="agreement_legal.KanbanViewButtons"
-        t-inherit="web.KanbanView.Buttons"
-        t-inherit-mode="primary"
-    >
-        <div role="toolbar" position="inside">
-            <t t-call="agreement_legal.TemplateButton" />
-        </div>
+    <!-- web.KanbanView.Buttons is empty in 19.0, define standalone template -->
+    <t t-name="agreement_legal.KanbanViewButtons">
+        <t t-call="agreement_legal.TemplateButton" />
     </t>
     <t
         t-name="agreement_legal.KanbanView"
